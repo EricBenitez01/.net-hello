@@ -74,4 +74,57 @@ do
         Console.WriteLine("Este numero es negativo");
     }
     break;
-} while (numero < 0 || numero > 0);*/
+} while (numero < 0 || numero > 0);
+Escribe un programa que:
+
+Pida datos a un cliente: Nombre, email, cupón
+
+Determine si un cliente tiene un cupon descuento
+
+Muestre un precio rebajado en función del descuento
+
+Muestre el precio de un producto sin descuento si no hay cupón
+int producto = 150;
+Console.WriteLine("Escribe tu nombre tu mail y tu cupon si lo tienes" );
+string?[] datos = new string[3];  
+for( int i = 0;i < datos.Length; i++)
+{
+   datos[i]= Console.ReadLine();
+}
+if (datos[2] == "agua")
+{
+    Console.WriteLine("Tu cupón tiene un 20% de descuento, pagas " + (producto * 0.80).ToString("0.00") + " en vez de " + producto.ToString("0.00"));
+
+}
+else
+{
+    Console.WriteLine("El valor de tu producto es " + producto );
+}
+*/
+
+
+using System.ComponentModel;
+
+Console.WriteLine("Elije uno de los siguientes lenguajes segun el numero de opcion que corresponda: \n1)C#\n2)Javascript\n3)Java");
+int opcion = Convert.ToInt32(Console.ReadLine());
+
+switch (opcion)
+{
+    case 1:
+        {
+            Console.WriteLine ("Elejiste C#");
+        }
+         break;
+    case 2:
+        {
+            Console.WriteLine("Elejiste Javascript");
+        }
+        break;
+    case 3:
+        {
+            Console.WriteLine("Elejiste Java");
+        }
+        break;
+            
+
+}           
